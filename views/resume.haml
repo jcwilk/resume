@@ -16,10 +16,12 @@
         - if @github_link
           %p
             %a(href=@github_link)= @github_link
-      - @misc_sections.each do |heading, content|
+      - @misc_sections.each do |heading, lis|
         %section
           %h2= heading
-          %p= content
+          %ul
+            - lis.each do |li|
+              %li= li
       %section
         %h2 Employment History
         - @jobs.each do |position, date, company, description|

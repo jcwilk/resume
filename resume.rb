@@ -4,8 +4,8 @@ class Resume < Sinatra::Base
     @name, @street, @city, @state, @email, @github_link = nil
     @street = 'optional street' #it'll hide the line if you omit
     @misc_sections = {
-      'Objective' => 'Productivity!',
-      'Skills' => 'Mad ones!'
+      'Objective' => ['Productivity!'],
+      'Skills' => ['Mad ones!']
     }
     @jobs = [
       #position, date string, company identification, description
