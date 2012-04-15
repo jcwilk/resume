@@ -1,3 +1,8 @@
+section, article, aside, header, hgroup, footer, nav, dialog, figure, h1, h2, h3, h4, h5, h6
+{
+  display: block;
+}
+
 body {
   background-color: #FFFFFD;
   color: #010101;

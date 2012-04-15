@@ -4,15 +4,32 @@
     %title= @title || '[title]'
     %link(rel='stylesheet' type='text/css' href='style.css')
   %body
-    %header
-      %mark= @name || '[name]'
-      %br
-      = @street || '[street]'
-      %br
-      = (@city || '[city]')+', '+(@state || '[state]')
-      %br
-      -(@email||'[email]').tap do |email|
-        %a(href="mailto:#{email}")= email
-      -if @github_link
-        %br
-        %a(href=@github_link) @github_link
+    %article
+      %header
+        %h1= @name || '[name]'
+        %p= @street || '[street]'
+        %p= (@city || '[city]')+', '+(@state || '[state]')
+        %p
+          - (@email||'[email]').tap do |email|
+            %a(href="mailto:#{email}")= email
+          - if @github_link
+            %br
+            %a(href=@github_link)= @github_link
+      - @misc_sections.each do |heading, content|
+        %section
+          %h2= heading
+          %p= content
+      %section
+        %h2 Employment History
+        - @jobs.each do |position, date, company, description|
+          %section
+            %hgroup
+              %h3= "#{date} #{position}"
+              %h4= company
+            = description
+      %section
+        %h2 Eduction
+        - @schools.each do |degree, date, school|
+          %section
+            %h3= "#{degree}, #{date}"
+            = school
