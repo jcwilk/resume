@@ -28,8 +28,12 @@
               %h4= company
             = description
       %section
-        %h2 Eduction
+        %h2 Education
         - @schools.each do |degree, date, school|
           %section
             %h3= "#{degree}, #{date}"
             = school
+      %footer
+        - @footer_links.each do |url, description|
+          %a{:href=>url}= url
+          =" - #{description}"

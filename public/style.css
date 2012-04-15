@@ -7,5 +7,27 @@ body {
   background-color: #FFFFFD;
   color: #010101;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 0.75em;
+  font-size: 75%;
+}
+
+h1, h2, h3, h4, h5, h6, header, hgroup {
+  line-height: 30%;
+}
+
+h1 {
+  font-size: 1.5em;
+  font-style: italic;
+  font-weight: bold;
+}
+
+article header {
+  padding-bottom: 20px;
+}
+
+section {
+  padding-top: 5px;
+}
+
+footer {
+  padding-top: 40px;
 }

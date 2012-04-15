@@ -3,7 +3,8 @@ class Resume < Sinatra::Base
     @title = nil
     @name, @street, @city, @state, @email, @github_link = nil
     @misc_sections = {
-      'Goals' => 'Productivity!'
+      'Objective' => 'Productivity!',
+      'Skills' => 'Mad ones!'
     }
     @jobs = [
       #position, date string, company identification, description
@@ -12,6 +13,9 @@ class Resume < Sinatra::Base
     @schools = [
       #degree, date string, school identification
       ['Computer Science','June 2006','Beer Academy']
+    ]
+    @footer_links = [
+      ['http://www.google.com/','Find me here! Somehow...']
     ]
   end
 
