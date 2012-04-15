@@ -13,8 +13,8 @@
         %p
           - (@email||'[email]').tap do |email|
             %a(href="mailto:#{email}")= email
-          - if @github_link
-            %br
+        - if @github_link
+          %p
             %a(href=@github_link)= @github_link
       - @misc_sections.each do |heading, content|
         %section
