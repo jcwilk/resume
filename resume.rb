@@ -5,7 +5,7 @@ class Resume < Sinatra::Base
     @street = nil #it'll hide the line if you omit
 
     @misc_sections = {
-      'Objective' => ['Productivity!'],
+      'Objective' => ['To build, enhance, and refactor innovative web projects as a part of an intelligent, motivated, and cooperative team.'],
       'Skills' => ['Mad ones!']
     }
     @jobs = [
@@ -14,7 +14,7 @@ class Resume < Sinatra::Base
         'Rails Engineer with API/Services focus',
         'Feb 2010 to March 2012',
         'Howcast Media, San Francisco, CA',
-        'Helped work towards rebuilding an oversized 2.3 app into satellite SOA parts running on Engine Yard Cloud. Broke users code/db into its own dedicated SSO and API service. Worked with management to architect next generation of SOA apps to replace the legacy app. Replaced in-house transcoding system with 3rd party integration to Zencoder while maintaining legacy formats.'
+        'Helped work towards rebuilding an oversized 2.3 app into satellite SOA parts running on Engine Yard Cloud. Broke users code/db into its own dedicated SSO and API service. Worked with management to architect next generation of SOA apps to replace the legacy app. Replaced in-house transcoding system with 3rd party integration to Zencoder while maintaining legacy formats. Implemented tests at all levels from model level RSpec to cucumber tests checking integration between servers running in the cloud.'
       ],
       [
         'Rails Engineer',
