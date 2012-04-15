@@ -1,18 +1,18 @@
 !!! 5
 %html
   %head
-    %title= @title || 'Resume'
+    %title= @title || '[title]'
     %link(rel='stylesheet' type='text/css' href='style.css')
   %body
     %header
-      %mark= @name || '<name>'
+      %mark= @name || '[name]'
       %br
-      = @street || '<street>'
+      = @street || '[street]'
       %br
-      = (@city || '<city>')+', '+(@state || '<state>')
+      = (@city || '[city]')+', '+(@state || '[state]')
       %br
-      -(@email||'<email>').tap do |email|
-        a(href="mailto:#{email}") email
+      -(@email||'[email]').tap do |email|
+        %a(href="mailto:#{email}")= email
       -if @github_link
         %br
-        a(href=@github_link) @github_link
+        %a(href=@github_link) @github_link
