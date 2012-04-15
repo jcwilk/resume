@@ -1,7 +1,7 @@
 class Resume < Sinatra::Base
   before do
     @title = nil
-    @name, @street, @city, @state, @email, @github_link = ['John Wilkinson','Berkeley, CA','jcwilk at gmail.com','http://github.com/jcwilk']
+    @name, @city, @state, @email, @github_link = ['John Wilkinson','Berkeley','CA','jcwilk at gmail.com','http://github.com/jcwilk']
     @street = nil #it'll hide the line if you omit
 
     @misc_sections = {
