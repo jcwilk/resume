@@ -1,0 +1,18 @@
+!!! 5
+%html
+  %head
+    %title= @title || 'Resume'
+    %link(rel='stylesheet' type='text/css' href='style.css')
+  %body
+    %header
+      %mark= @name || '<name>'
+      %br
+      = @street || '<street>'
+      %br
+      = (@city || '<city>')+', '+(@state || '<state>')
+      %br
+      -(@email||'<email>').tap do |email|
+        a(href="mailto:#{email}") email
+      -if @github_link
+        %br
+        a(href=@github_link) @github_link
