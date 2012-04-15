@@ -7,11 +7,11 @@ body {
   background-color: #FFFFFD;
   color: #010101;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 75%;
+  font-size: 80%;
 }
 
 article {
-  max-width: 600px;
+  max-width: 800px;
 }
 
 h1, h2, h3, h4, h5, h6, header, hgroup {
