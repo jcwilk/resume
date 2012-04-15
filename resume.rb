@@ -29,7 +29,7 @@ class Resume < Sinatra::Base
     ]
     @footer_links = [
       ['http://jcwilk-resume.heroku.com/','Heroku hosted'],
-      ['http://github.com/jcwilk/resume','Github coded']
+      ['https://github.com/jcwilk/resume/blob/jcwilk/views/resume.haml','Github coded']
     ]
   end
 
