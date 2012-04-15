@@ -5,8 +5,8 @@ class Resume < Sinatra::Base
     @street = nil #it'll hide the line if you omit
 
     @misc_sections = {
-      'Objective' => 'Productivity!',
-      'Skills' => 'Mad ones!'
+      'Objective' => ['Productivity!'],
+      'Skills' => ['Mad ones!']
     }
     @jobs = [
       #position, date string, company identification, description
