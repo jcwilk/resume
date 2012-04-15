@@ -1,6 +1,6 @@
 class Resume < Sinatra::Base
   before do
-    @title = nil
+    @title = 'John Wilkinson'
     @name, @city, @state, @email, @github_link = ['John Wilkinson','Berkeley','CA','jcwilk at gmail.com','http://github.com/jcwilk']
     @street = nil #it'll hide the line if you omit
 
