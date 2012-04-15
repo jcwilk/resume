@@ -36,5 +36,6 @@
             = school
       %footer
         - @footer_links.each do |url, description|
-          %a{:href=>url}= url
-          =" - #{description}"
+          %p
+            %a{:href=>url}= url
+            =" - #{description}"
