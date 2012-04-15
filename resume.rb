@@ -2,6 +2,7 @@ class Resume < Sinatra::Base
   before do
     @title = nil
     @name, @street, @city, @state, @email, @github_link = nil
+    @street = 'optional street' #it'll hide the line if you omit
     @misc_sections = {
       'Objective' => 'Productivity!',
       'Skills' => 'Mad ones!'
