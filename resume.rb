@@ -16,6 +16,13 @@ class Resume < Sinatra::Base
         'Eager to play devil\'s advocate and wrestle out blockades before too much code has been invested',
         'Works refactoring in as an inherent part of moving forward with development to keep technical debt down'
       ],
+      'Preferred Development Style' => [
+        'git with something very similar to <a href="http://scottchacon.com/2011/08/31/github-flow.html">Github Workflow</a>',
+        'Ubuntu, RVM, RubyMine/SublimeText/Vim',
+        'Pair programming when it\'s needed, not when it\'s not',
+        'Github inline code reviews when requested by the committer',
+        'Ideally something like chef to keep servers sane'
+      ]
       'Personal Interests' => [
         'Open Source Software. In your web app, in your phone, in your 3d printer, it\'s all amazing.',
         'Gaming from NES to TF2',
