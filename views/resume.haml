@@ -1,22 +1,22 @@
 !!! 5
 %html
   %head
-    %title= @title || '[title]'
+    %title= @resume.title || '[title]'
     %link(rel='stylesheet' type='text/css' href='style.css')
   %body
     %article
       %header
-        %h1= @name || '[name]'
-        - if @street
-          %p= @street
-        %p= (@city || '[city]')+', '+(@state || '[state]')
+        %h1= @resume.name || '[name]'
+        - if @resume.street
+          %p= @resume.street
+        %p= (@resume.city || '[city]')+', '+(@resume.state || '[state]')
         %p
-          - (@email||'[email]').tap do |email|
+          - (@resume.email||'[email]').tap do |email|
             %a(href="mailto:#{email}")= email
-        - if @github_link
+        - if @resume.github_link
           %p
-            %a(href=@github_link)= @github_link
-      - @misc_sections.each do |heading, lis|
+            %a{:href=>@resume.github_link}= @resume.github_link
+      - @resume.misc_sections.each do |heading, lis|
         %section
           %h2= heading
           %ul
@@ -24,7 +24,7 @@
               %li= li
       %section
         %h2 Employment History
-        - @jobs.each do |position, date, company, description|
+        - @resume.jobs.each do |position, date, company, description|
           %section
             %hgroup
               %h3= "#{date} - #{position}"
@@ -32,12 +32,12 @@
             = description
       %section
         %h2 Education
-        - @schools.each do |degree, date, school|
+        - @resume.schools.each do |degree, date, school|
           %section
             %h3= "#{degree}, #{date}"
             = school
       %footer
-        - @footer_links.each do |url, description|
+        - @resume.footer_links.each do |url, description|
           %p
             %a{:href=>url}= url
             =" - #{description}"
