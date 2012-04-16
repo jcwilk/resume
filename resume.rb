@@ -22,7 +22,7 @@ class Resume < Sinatra::Base
         'Pair programming when it\'s needed, not when it\'s not',
         'Github inline code reviews when requested by the committer',
         'Ideally something like chef to keep servers sane'
-      ]
+      ],
       'Personal Interests' => [
         'Open Source Software. In your web app, in your phone, in your 3d printer, it\'s all amazing.',
         'Gaming from NES to TF2',
