@@ -1,7 +1,3 @@
-require 'rubygems'
-require 'bundler'
+require './environment.rb'
 
-Bundler.require
-
-require './resume'
-run Resume
+run ResumeApp

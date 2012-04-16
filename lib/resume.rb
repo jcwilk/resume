@@ -1,10 +1,23 @@
-class Resume < Sinatra::Base
-  before do
+class Resume
+  #TODO: Use these to pull up specific non-hardcoded instances
+  def self.find(*args)
+    new
+  end
+
+  def self.first(*args)
+    new
+  end
+
+  attr_reader :title, :name, :street, :city, :state, :email, :github_link
+
+  def initialize
     @title = 'John Wilkinson'
     @name, @city, @state, @email, @github_link = ['John Wilkinson','Berkeley','CA','jcwilk at gmail.com','http://github.com/jcwilk']
     @street = nil #it'll hide the line if you omit
+  end
 
-    @misc_sections = {
+  def misc_sections 
+    {
       'Objective' => [
         'To build, enhance, and refactor innovative web projects and experiment with new technologies as a part of an intelligent, motivated, and cooperative team.'
       ],
@@ -29,7 +42,10 @@ class Resume < Sinatra::Base
         'Traveling'
       ]
     }
-    @jobs = [
+  end
+
+  def jobs
+    [
       #position, date string, company identification, description
       [
         'Rails Engineer with API/Services focus',
@@ -44,17 +60,19 @@ class Resume < Sinatra::Base
         'Worked with one to two other developers and the CEO on a rails 2.x app which provided a platform storefront and backend designed for inventory maintenance of tens of thousands of closely related collectibles across dozens of clients and domainnames. Integrated ActiveMerchant into a new checkout system. Designed a simple web-based POS to reuse as much behavior from the checkout system as possible. Built a dashboard to view an array of graphs across custom ranges with aggregate statistics.'
       ]
     ]
-    @schools = [
+  end
+
+  def schools
+    [
       #degree, date string, school identification
       ['BS in Computer Science','June 2008','Seattle University, Seattle, WA']
     ]
-    @footer_links = [
+  end
+
+  def footer_links
+    [
       ['http://jcwilk-resume.heroku.com/','Heroku hosted'],
       ['https://github.com/jcwilk/resume/blob/jcwilk/views/resume.haml','Github coded']
     ]
-  end
-
-  get "/" do
-    haml :resume
   end
 end
