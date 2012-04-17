@@ -7,7 +7,7 @@ class ResumeApp < Sinatra::Base
   end
 
   get "/:id" do
-    @resume = Resume.find(id)
+    @resume = Resume.find(params[:id])
     haml :resume
   end
 end
