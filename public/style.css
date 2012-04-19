@@ -3,6 +3,10 @@ section, article, aside, header, hgroup, footer, nav, dialog, figure, h1, h2, h3
   display: block;
 }
 
+ul {
+  margin: 0;
+}
+
 body {
   background-color: #FFFFFD;
   color: #010101;
@@ -30,6 +34,10 @@ article header {
 
 section {
   padding-top: 5px;
+}
+
+section.topic {
+  padding-top: 10px;
 }
 
 footer {

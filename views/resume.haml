@@ -17,12 +17,12 @@
           %p
             %a{:href=>@resume.github_link}= @resume.github_link
       - @resume.misc_sections.each do |heading, lis|
-        %section
+        %section.topic
           %h2= heading
           %ul
             - lis.each do |li|
               %li= li
-      %section
+      %section.topic
         %h2 Employment History
         - @resume.jobs.each do |position, date, company, description|
           %section
@@ -30,7 +30,7 @@
               %h3= "#{date} - #{position}"
               %h4= company
             = description
-      %section
+      %section.topic
         %h2 Education
         - @resume.schools.each do |degree, date, school|
           %section
