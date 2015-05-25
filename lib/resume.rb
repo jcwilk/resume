@@ -12,34 +12,35 @@ class Resume
 
   def initialize
     @title = 'John Wilkinson'
-    @name, @city, @state, @email, @github_link = ['John Wilkinson','Berkeley','CA','jcwilk at gmail.com','http://github.com/jcwilk']
+    @name, @city, @state, @email, @github_link = ['John Wilkinson','Singapore','Singapore','jcwilk at gmail.com','http://github.com/jcwilk']
     @street = nil #it'll hide the line if you omit
   end
 
-  def misc_sections 
+  def misc_sections
     {
       'Objective' => [
-        'To build, enhance, and refactor innovative web projects and experiment with new technologies as a part of an intelligent, motivated, and cooperative team.'
+        'To design, build, refactor, and extend innovative web projects and experiment with new technologies as a part of a motivated, respectful, and cooperative team with freedom to hone unique skills to be shared between ourselves. Long sentences are a plus.'
       ],
       'Skills' => [
-        'Well versed in Ruby, proficient in JavaScript, and adequate in Python, C++, BASH, and Java',
-        'Experienced with RSpec, Capybara, Jasmine, mocking, and when and when not to use them',
-        'Built a number of RESTful APIs and is aware of the cost/value tradeoffs inherent in a maintainable service',
-        'At home on the MySQL CLI and able to optimize ActiveRecord through the stack for a given query',
-        'Eager to play devil\'s advocate and wrestle out blockades before too much code has been invested',
-        'Works refactoring in as an inherent part of moving forward with development to keep technical debt down'
+        'Well versed in Ruby and JavaScript, adequate in Python, C++, BASH, and Java, and enthused and fearless about diving into any other language',
+        'Passionate about seeking the perfect balance of testing across the various possible layers to drive the given situation',
+        'Architected a variety of RESTful APIs and experienced first hand the value tradeoffs in deciding between designing for maintainability or organic growth',
+        'Comforable diving into a database CLI or debugging slow/eroneous queries through more indirect means',
+        'Eager to play devil\'s advocate and wrestle out key blockades along the way before too much code gets invested',
+        'Works refactoring in as an inherent part of moving forward with development to keep technical debt at the level appropriate for the project'
       ],
       'Preferred Development Style' => [
-        'git with something very similar to <a href="http://scottchacon.com/2011/08/31/github-flow.html">Github Workflow</a>',
-        'Ubuntu, RVM, RubyMine/SublimeText/Vim',
-        'Pair programming when it\'s needed, not when it\'s not',
-        'Github inline code reviews when requested by the committer',
-        'Ideally something like chef to keep servers sane'
+        'git with something like <a href="http://scottchacon.com/2011/08/31/github-flow.html">Github Workflow</a> to keep master safe and valuable',
+        'Ubuntu, RVM, SublimeText/Vim',
+        'Pair programming when it\'s valuable, solo when it\'s efficient',
+        'Github inline code reviews as much as possible but not simply as dogma',
+        'Automated server provisioning (eg chef, puppet, etc) less is more!'
       ],
       'Personal Interests' => [
-        'Open Source Software. In your web app, in your phone, in your 3d printer, it\'s all amazing.',
-        'Gaming from NES to TF2',
-        'Traveling'
+        'Open Source: Hardware, software, and ideas; The right community can outshine the brightest proprietary enterprise.',
+        'Hypermedia and IoT; It\'s unfortunately not always professionally feasible, but always a heck of a lot of fun to push recreationally.',
+        'Gaming: Mainly retro, indie, and indie development',
+        'Traveling: Mainly western Europe, Scandinavia, and Asia'
       ]
     }
   end
@@ -47,6 +48,18 @@ class Resume
   def jobs
     [
       #position, date string, company identification, description
+      [
+        'Rails Software Engineer/Software Architect',
+        'March 2012 to October 2014',
+        'Lumos Labs, San Francisco, CA',
+        'Large focus on finding compromises using rails engines between SOA and Monolith given our preexisting assets.
+        Started and led a small team dedicated to enhancing and innovating on web architecture across the rails team.
+        Researched, designed, built, and delivered full services for handling all of the split testing and mail delivery for the company.
+        Championed aggressive testing practices and well documented delivery procedures to enhance trust in the systems surrounding our daily development.
+        Trained and mentored junior engineers well into midlevel and beyond.
+        Worked closely with upper management to ensure expectations about resources needed were managed on both ends of the piepline.
+        Gave high profile presentations, one of which to Yukihiro Matsumoto (creator of Ruby), on behalf of the company.'
+      ],
       [
         'Rails Engineer with API/Services focus',
         'Feb 2010 to March 2012',
