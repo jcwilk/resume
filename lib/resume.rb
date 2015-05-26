@@ -52,25 +52,38 @@ class Resume
         'Rails Software Engineer/Software Architect',
         'March 2012 to October 2014',
         'Lumos Labs, San Francisco, CA',
-        'Large focus on finding compromises using rails engines between SOA and Monolith given our preexisting assets.
-        Started and led a small team dedicated to enhancing and innovating on web architecture across the rails team.
-        Researched, designed, built, and delivered full services for handling all of the split testing and mail delivery for the company.
-        Championed aggressive testing practices and well documented delivery procedures to enhance trust in the systems surrounding our daily development.
-        Trained and mentored junior engineers well into midlevel and beyond.
-        Worked closely with upper management to ensure expectations about resources needed were managed on both ends of the piepline.
-        Gave high profile presentations, one of which to Yukihiro Matsumoto (creator of Ruby), on behalf of the company.'
+        [
+          'Focused largely on finding compromises using rails engines between SOA and Monolith given our pre-existing assets.',
+          'Started and led a small team dedicated to enhancing and innovating on web architecture across the rails team.',
+          'Researched, designed, built, and delivered full services for handling all of the split testing and email delivery for the company.',
+          'Championed aggressive testing practices and well documented delivery procedures to enhance trust in the systems surrounding our daily development.',
+          'Trained and mentored junior engineers well into midlevel and beyond.',
+          'Worked closely with upper management to ensure expectations about resources needed were managed on both ends of the piepline.',
+          'Gave high profile presentations, one of which to Yukihiro Matsumoto (creator of Ruby), on behalf of the company.'
+        ]
       ],
       [
         'Rails Engineer with API/Services focus',
         'Feb 2010 to March 2012',
         'Howcast Media, San Francisco, CA',
-        'Helped work towards rebuilding an oversized 2.3 app into satellite SOA parts running on Engine Yard Cloud maintained via Chef. Broke users code/db into its own dedicated SSO and API service. Worked with management to architect next generation of SOA apps to replace the legacy app. Replaced in-house transcoding system with 3rd party integration to Zencoder while maintaining legacy formats. Implemented tests at all levels from model level RSpec to Cucumber tests checking integration between servers running in the cloud.'
+        [
+          'Helped work towards rebuilding an oversized 2.3 app into satellite SOA parts running on Engine Yard Cloud maintained via Chef.',
+          'Broke users code/db into its own dedicated SSO and API service.',
+          'Worked with management to architect next generation of SOA apps to replace the legacy app.',
+          'Replaced in-house transcoding system with 3rd party integration to Zencoder while maintaining legacy formats.',
+          'Implemented tests at all levels from model level RSpec to Cucumber tests checking integration between servers running in the cloud.'
+        ]
       ],
       [
         'Rails Engineer',
         'Summer 2007 to Fall 2009',
         'CrystalCommerce, Seattle, WA',
-        'Worked with one to two other developers and the CEO on a rails 2.x app which provided a platform storefront and backend designed for inventory maintenance of tens of thousands of closely related collectibles across dozens of clients and domainnames. Integrated ActiveMerchant into a new checkout system. Designed a simple web-based POS to reuse as much behavior from the checkout system as possible. Built a dashboard to view an array of graphs across custom ranges with aggregate statistics.'
+        [
+          'Worked with one to two other developers and the CEO on a rails 2.x app which provided a platform storefront and backend designed for inventory maintenance of tens of thousands of closely related collectibles across dozens of clients and domain names.',
+          'Integrated ActiveMerchant into a new checkout system.',
+          'Designed a simple web-based POS to reuse as much behavior from the checkout system as possible.',
+          'Built a dashboard to view an array of graphs across custom ranges with aggregate statistics.'
+        ]
       ]
     ]
   end
