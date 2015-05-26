@@ -29,7 +29,9 @@
             %hgroup
               %h3= "#{date} - #{position}"
               %h4= company
-            = description
+            %ul
+              - [description].flatten.each do |desc|
+                %li= desc
       %section.topic
         %h2 Education
         - @resume.schools.each do |degree, date, school|
