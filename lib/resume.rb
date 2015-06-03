@@ -13,7 +13,7 @@ class Resume
   def initialize
     @title = 'John Wilkinson'
     @name, @city, @state, @email, @github_link = ['John Wilkinson','Singapore','Singapore','jcwilk at gmail.com','http://github.com/jcwilk']
-    @street = nil #it'll hide the line if you omit
+    @street = '2 Leedon Road' #it'll hide the line if you omit
   end
 
   def misc_sections
