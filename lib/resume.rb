@@ -88,6 +88,19 @@ class Resume
     ]
   end
 
+  def personal_projects
+    [
+      #title, url, description
+      [
+        'Being Awesome',
+        'http://www.google.com',
+        [
+          'Self explanatory!'
+        ]
+      ]
+    ]
+  end
+
   def schools
     [
       #degree, date string, school identification

@@ -32,6 +32,19 @@
             %ul
               - [description].flatten.each do |desc|
                 %li= desc
+      - if @resume.personal_projects.any?
+        %section.topic
+          %h2 Personal Projects
+          - @resume.personal_projects.each do |title, link, description|
+            %section
+              %hgroup
+                %h3= title
+                - if link
+                  %h4
+                    %a{href: link}= link
+              %ul
+                - [description].flatten.each do |desc|
+                  %li= desc
       %section.topic
         %h2 Education
         - @resume.schools.each do |degree, date, school|
