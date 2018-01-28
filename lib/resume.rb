@@ -22,8 +22,34 @@ class Resume
   def jobs
     [
       #position, date string, company identification, description
-      ['Software Engineer','April 2006 - April 2007','Scumsoft, Yosemite, CA',['Wrote jello capture software.','Janitorial work.']],
-      ['Bounty Hunter','April 2005 - April 2006','Phleebut','Got Roger']
+      [
+        'Software Engineer',
+        'April 2006 - April 2007',
+        'Scumsoft, Yosemite, CA',
+        [
+          'Wrote jello capture software.',
+          'Janitorial work.'
+        ]
+      ],
+      [
+        'Bounty Hunter',
+        'April 2005 - April 2006',
+        'Phleebut',
+        'Got Roger'
+      ]
+    ]
+  end
+
+  def personal_projects
+    [
+      #title, url, description
+      [
+        'Being Awesome',
+        'http://www.google.com',
+        [
+          'Self explanatory!'
+        ]
+      ]
     ]
   end
 
