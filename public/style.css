@@ -11,7 +11,6 @@ body {
   background-color: #FFFFFD;
   color: #010101;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 80%;
 }
 
 article {
@@ -19,7 +18,8 @@ article {
 }
 
 h1, h2, h3, h4, h5, h6, header, hgroup {
-  line-height: 30%;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 h1 {
@@ -29,17 +29,18 @@ h1 {
 }
 
 article header {
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 section {
-  padding-top: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 section.topic {
-  padding-top: 10px;
+
 }
 
 footer {
-  padding-top: 40px;
+  margin-top: 40px;
 }
