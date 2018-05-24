@@ -50,12 +50,12 @@ class Resume
       #position, date string, company identification, description
       [
         'Games Engineer',
-        'August 2017 to Present',
+        'August 2017 to April 2018',
         'Springloaded, Singapore',
         [
           'Ported and released two games for the Nintendo Switch from legacy mobile code: "Hiragana Pixel Party" and "Nuclien".',
           'Helped finish up another Switch game, "GORSD", still unreleased as we search for publishers.',
-          'Leading the development of the battle animation system for "Tiny Dice Dungeon 2", the successor to "Tiny Dice Dungeon", still in development.'
+          'Led the development of the battle animation system for "Tiny Dice Dungeon 2", the successor to "Tiny Dice Dungeon", still in development.'
         ]
       ],
       [
