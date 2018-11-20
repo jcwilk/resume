@@ -144,7 +144,7 @@ class Resume
         'Anx',
         'https://www.lexaloffle.com/bbs/?pid=42366&tid=29630',
         [
-          'Still WIP first person 3D game for the Pico-8 platform.',
+          'First person 3D game prototype for the Pico-8 platform.',
           'Simulation of social anxiety as a game mechanic.',
           'Built the raycasting 3D engine from scratch which runs in a strictly 2D platform.',
           'Due to lack of 3D hardware support the rendering automatically degrades in quality to maintain framerate.'
