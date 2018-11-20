@@ -12,8 +12,8 @@ class Resume
 
   def initialize
     @title = 'John Wilkinson'
-    @name, @city, @state, @email, @github_link = ['John Wilkinson','Singapore','Singapore','jcwilk at gmail.com','http://github.com/jcwilk']
-    @street = 'Bukit Batok East' #it'll hide the line if you omit
+    @name, @city, @state, @email, @github_link = ['John Wilkinson','Seoul','Korea','jcwilk at gmail.com','http://github.com/jcwilk']
+    @street = 'Sinchon' #it'll hide the line if you omit
   end
 
   def misc_sections
@@ -55,12 +55,13 @@ class Resume
         [
           'Ported and released two games for the Nintendo Switch from legacy mobile code: "Hiragana Pixel Party" and "Nuclien".',
           'Helped finish up another Switch game, "GORSD", still unreleased as we search for publishers.',
-          'Led the development of the battle animation system for "Tiny Dice Dungeon 2", the successor to "Tiny Dice Dungeon", still in development.'
+          'Led the development of the battle animation system for "Tiny Dice Dungeon 2", the successor to "Tiny Dice Dungeon", still in development.',
+          'Credited with building the particle system used in Legend of Evil, a new switch game released in October 2018'
         ]
       ],
       [
         'CTO',
-        'May 2016 to Present',
+        'May 2016 to August 2018',
         'Gimmie, Singapore',
         [
           'Managed all technical aspects of the company.',
