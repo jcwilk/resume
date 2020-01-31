@@ -55,6 +55,3 @@ DEPENDENCIES
   sinatra
   thin
   webrat
-
-BUNDLED WITH
-   1.12.5
