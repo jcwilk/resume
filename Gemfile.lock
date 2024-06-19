@@ -62,5 +62,8 @@ DEPENDENCIES
   thin
   webrat
 
+RUBY VERSION
+   ruby 3.2.4p170
+
 BUNDLED WITH
    2.4.19
