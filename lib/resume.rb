@@ -12,7 +12,7 @@ class Resume
 
   def initialize
     @title = 'John Wilkinson'
-    @name, @city, @state, @email, @github_link = ['John Wilkinson','Bonny Doon, California','USA','me at jcwilk.com','http://github.com/jcwilk']
+    @name, @city, @state, @email, @github_link = ['John Wilkinson','La Honda, California','USA','me at jcwilk.com','http://github.com/jcwilk']
     #@street = 'Sinchon' #it'll hide the line if you omit
   end
 
@@ -22,7 +22,7 @@ class Resume
         'To design, build, refactor, and extend innovative projects and experiment with new technologies as a part of a motivated, respectful, and cooperative team with freedom to hone unique skills to be shared between ourselves. Long sentences are a plus.'
       ],
       'Skills' => [
-        'Well versed in Ruby, JavaScript, and C#, adequate in Python, C++, BASH, and Java, and enthused and fearless about diving into any other language.',
+        'Well versed in Ruby, JavaScript, and C#, adequate in Unison, GLSL, Python, C++, Lua, BASH, and Java, and enthused and fearless about diving into any other language.',
         'Passionate about seeking the perfect balance of testing across the various possible layers to drive the given situation.',
         'Architected a variety of RESTful APIs and experienced first hand the value tradeoffs in deciding between designing for maintainability or organic growth.',
         'Comforable diving into a database CLI or debugging slow/eroneous queries through more indirect means.',
@@ -38,6 +38,7 @@ class Resume
       ],
       'Personal Interests' => [
         'Open Source: Hardware, software, and ideas; The right community can outshine the brightest proprietary enterprise.',
+        "LLMs and Functional Programming: We've only begun to see the potential of generative behavior.",
         'Hypermedia and IoT; It\'s unfortunately not always professionally feasible, but always a heck of a lot of fun to push recreationally.',
         'Gaming: Mainly retro, indie, and indie development',
         'Traveling: Mainly western Europe, Scandinavia, and Asia'
@@ -48,6 +49,17 @@ class Resume
   def jobs
     [
       #position, date string, company identification, description
+      [
+        'Software Engineer',
+        'March 2020 to September 2023',
+        'Doximity, San Francisco, CA (but remote)',
+        [
+          'Worked on internal tooling and background job pipelines for the ads department.',
+          'Mentored junior engineers and played tech lead for a team focused on a targeting-related product.',
+          'Orchestrated the release of simplekiq, an open source ruby library built on sidekiq-pro to help manage sidekiq job workflows in a more modular way.',
+          'Spearheaded an LLM-related project reporting to the CEO.',
+        ]
+      ],
       [
         'Games Engineer',
         'August 2017 to April 2018',
@@ -129,6 +141,17 @@ class Resume
   def personal_projects
     [
       #title, url, description
+      [
+        'Tree Driven Interaction',
+        'https://github.com/jcwilk/tdi',
+        [
+          "Developed a GPT-4 Turbo chat client on GitHub Pages using RxJS, featuring client-side operation for enhanced privacy and customization.",
+          "Implemented innovative navigation and interaction features such as rigorous PushState, unique EmojiSha message addressing, and cross-device synchronization via the OpenAI Files API.",
+          "Architected a dynamic JavaScript function system within the chat context, enabling real-time generation, storage, and invocation of custom functions directly related to ongoing conversations.",
+          "Integrated advanced data retrieval capabilities (JSONP and CORS) and developed AI introspective tools for recursive conversation summarization and embedding generation.",
+          "Designed a comprehensive user interface for API management and conversation control, facilitating extensive customization and interactive user experiences without requiring initial API key setup."
+        ]
+      ],
       [
         'Material Girl',
         'https://www.lexaloffle.com/bbs/?pid=39675&tid=29166',
