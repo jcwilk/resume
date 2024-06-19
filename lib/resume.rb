@@ -203,7 +203,7 @@ class Resume
 
   def footer_links
     [
-      ['http://jcwilk-resume.heroku.com/','Heroku hosted'],
+      ['https://jcwilk-resume.herokuapp.com/','Heroku hosted'],
       ['https://github.com/jcwilk/resume/blob/jcwilk/views/resume.haml','Github coded']
     ]
   end
